@@ -9,7 +9,17 @@ const Navbar = () => {
 
         <Link to='/about'>About</Link>
         <Link to='/services'>Services</Link>
-        <Link to='/projects'>Projects</Link>
+       <div className="relative group">
+       <Link to="/projects" className="flex items-center gap-1"> Projects <i className="ri-arrow-down-s-line"></i></Link>
+      <div className="absolute left-0 top-full mt-2 w-48 rounded-xl bg-[#1A2F38] border border-white/10 shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
+      <Link
+      to="/projects/backend"
+      className="block px-4 py-3 hover:bg-[#27464D] rounded-b-xl"
+    >
+      Backend
+    </Link>
+  </div>
+</div>
         <Link to='/process'>Process</Link>
         <Link to='/testimonials'>Testimonials</Link>
         <Link to='/faqs'>FAQs</Link>
