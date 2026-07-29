@@ -10,12 +10,12 @@ import Faqs from './pages/Faqs'
 import NotFound from './pages/NotFound'
 import Backend from './components/Backend'
 import RandomAbout from './pages/RandomAbout'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
     <div className="w-full bg-[radial-gradient(circle,#27464D_10%,#040608_100%)] px-15 py-7">
       <Navbar/>
-
       <Routes>
         
         <Route path='/about' element={<About/>} />
@@ -31,6 +31,8 @@ const App = () => {
 
     <Route path='/about/:key' element={<RandomAbout/>}/>
       </Routes>
+      <Footer/>
+
     </div>
   )
 }
