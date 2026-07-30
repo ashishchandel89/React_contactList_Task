@@ -1,6 +1,12 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { reelDataContext } from '../context/ReelContext'
 
 const Footer = () => {
+
+  const reelData=useContext(reelDataContext)
+  console.log(reelData)
+  console.log('hello')
+
   return (
     <div className='w-full h-[10rem] bg-amber-800 p-10'>
       <h1 className='text-amber-50 text-4xl font-semibold font-mono'>Footer</h1>
