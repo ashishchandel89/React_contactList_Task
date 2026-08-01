@@ -1,8 +1,9 @@
 import React, { createContext, useContext, useEffect, useState } from 'react'
 import { getProductData } from '../api/ProductData'
+import axios from 'axios'
 
 
-export const ProductDataContext=createContext()
+ export const ProductDataContext=createContext()
 
 const ProductContext = (props) => {
 
@@ -12,12 +13,12 @@ const ProductContext = (props) => {
             setProductData(await getProductData());
        }
        
-      
+     
     useEffect(function(){
         setData()
-        console.log('hello')
     },[])
 
+   
   return (
     <div>
         <ProductDataContext.Provider value={productData}>

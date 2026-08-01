@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Contact = () => {
+const About = () => {
   return (
     <div className='w-full h-screen bg-[#ADA9A9] flex justify-center items-center text-8xl font-semibold'>
-      Contact
+      About
     </div>
   )
 }
 
-export default Contact
+export default About

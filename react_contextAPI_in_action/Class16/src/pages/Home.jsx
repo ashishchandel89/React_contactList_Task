@@ -6,7 +6,7 @@ const Home = () => {
   return (
   <div className='w-full  bg-[#ADA9A9] relative flex flex-col gap-15'>
       <div className=' p-10'>
-      <Navbar/>
+     
       <Section/>
     </div>
     </div>
