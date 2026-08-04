@@ -1,7 +1,26 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import './navbar.scss'
 
 const Navbar = () => {
+
+    const [dateTime,setDateTime]=useState('');
+    useEffect(()=>{
+        const updateDateTime=()=>{
+            const now=new Date();
+            const formattedDateTime=now.toLocaleString('en-US',{
+                weekday:'short',
+                month:'short',
+                day:'numeric',
+                hour:'numeric',
+                minute:'2-digit',
+                hour12:'true'
+            }).toWellFormed()   
+            setDateTime(formattedDateTime.replace(',',''));
+        }
+        updateDateTime()
+        const interval=setInterval(updateDateTime,1000)
+        return ()=>clearInterval(interval);
+    },[])
   return (
         <nav>
             <div className="leftBar">
@@ -33,7 +52,7 @@ const Navbar = () => {
                 </div>
                 
                 <div className="nav-items date">
-                    <p>DateTime</p>
+                    <p>{dateTime}</p>
                 </div>
             </div>
         </nav>
