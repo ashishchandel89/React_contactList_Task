@@ -5,6 +5,7 @@ import Navbar from './components/Navbar'
 import MacWindow from './components/Window/MacWindow'
 import Github from './components/Window/Github'
 import Notes from './components/Window/Notes'
+import Resume from './components/Window/resume'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Github/>
           <Dock/>
           <Notes/>
+          <Resume/>
         </div>
       </main>
    
