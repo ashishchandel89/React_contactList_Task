@@ -1,0 +1,12 @@
+.notes-window{
+   
+    padding: 1rem;
+    font-size: 0.7rem;
+    overflow-y: auto;
+    height: 100%;
+    padding-bottom: 1rem;
+    
+    pre{
+        background-color: transparent !important;
+    }
+}

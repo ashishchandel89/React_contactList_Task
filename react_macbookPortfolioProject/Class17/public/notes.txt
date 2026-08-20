@@ -1,0 +1,160 @@
+/**
+ * @file: profile.config.ts
+ * @author: Ashish Chandel
+ * @summary: B.Tech CSE Student & Full-Stack Developer.
+ */
+
+// --------------------------------------------------
+// 1. CORE DEPENDENCIES & SKILLS
+// --------------------------------------------------
+
+const TECH_STACK = {
+  frontend: [
+    "HTML5",
+    "CSS3",
+    "JavaScript",
+    "React.js",
+    "TailwindCSS",
+  ],
+
+  backend: [
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "MySQL",
+  ],
+
+  languages: [
+    "C",
+    "C++",
+    "Java",
+  ],
+
+  tools: [
+    "Git",
+    "GitHub",
+    "VS Code",
+    "Android Studio",
+  ],
+};
+
+// --------------------------------------------------
+// 2. DEVELOPMENT JOURNEY
+// --------------------------------------------------
+
+class ProfessionalHistory {
+
+  /** * CURRENT FOCUS
+   * @period 2025 - Present
+   */
+  public FullStackDevelopment(): void {
+
+    const role = "Full-Stack Developer";
+
+    this.focus = [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+    ];
+
+    // Building modern and responsive web applications
+    // Working with REST APIs and component-based architecture
+  }
+
+  /** * FRONTEND DEVELOPMENT
+   * @period 2024 - Present
+   */
+  public ReactDevelopment(): void {
+
+    this.role = "Frontend Developer";
+
+    this.focus = [
+      "React",
+      "React Router",
+      "Context API",
+      "Redux Toolkit",
+      "TailwindCSS",
+    ];
+
+    // Creating interactive interfaces with modern React
+    // Exploring scalable frontend architecture
+  }
+}
+
+// --------------------------------------------------
+// 3. PROJECT EXPERIENCE
+// --------------------------------------------------
+
+interface Project {
+  name: string;
+  technology: string[];
+  type: string;
+}
+
+const projects: Project[] = [
+  {
+    name: "React Portfolio",
+    technology: ["React", "SCSS", "JavaScript"],
+    type: "Personal Portfolio",
+  },
+
+  {
+    name: "Stylish Real Calling",
+    technology: ["Java", "Android", "Volley"],
+    type: "Android Application",
+  },
+
+  {
+    name: "ShakeLoc",
+    technology: ["Java", "Android"],
+    type: "Safety Application",
+  },
+
+  {
+    name: "StaffShifter",
+    technology: ["Java", "MySQL"],
+    type: "Scheduling Application",
+  },
+];
+
+// --------------------------------------------------
+// 4. ACADEMIC BACKGROUND
+// --------------------------------------------------
+
+const education = new Map<string, string>([
+  [
+    "CDLSIET, Panniwala Mota",
+    "B.Tech Computer Science & Engineering"
+  ],
+
+  [
+    "Aptech Computer Education",
+    "Software & Technology Training"
+  ],
+]);
+
+// --------------------------------------------------
+// 5. CURRENTLY LEARNING
+// --------------------------------------------------
+
+const currentlyLearning = [
+  "MERN Stack",
+  "Redux Toolkit",
+  "REST APIs",
+  "Docker",
+  "Kubernetes Basics",
+  "AI Integration",
+];
+
+// --------------------------------------------------
+// 6. CAREER OBJECTIVE
+// --------------------------------------------------
+
+const careerGoal = {
+  target: "Software / Full-Stack Developer",
+  focus: "Building scalable & user-friendly applications",
+  approach: "Learn -> Build -> Deploy -> Improve",
+};
+
+export default new ProfessionalHistory();

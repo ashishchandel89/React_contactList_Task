@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "image": "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=1000",
+    "image": "https://i.pinimg.com/736x/ce/8e/1f/ce8e1f60a97cab3f9137677e66edb679.jpg",
     "title": "Scheds - A Course Schedule Generator",
     "description": "A comprehensive course schedule generator application designed to simplify and organize academic schedules.",
     "tags": ["ASP.NET Core", "C#", "Entity Framework", "SQL Server", "Bootstrap", "jQuery"],
@@ -10,7 +10,7 @@
   },
   {
     "id": 2,
-    "image": "https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=1000",
+    "image": "https://i.pinimg.com/736x/64/b6/d7/64b6d7f570bd679ef8b0b1f68ad3fcd3.jpg",
     "title": "E-Commerce Platform",
     "description": "A modern e-commerce platform with product browsing, shopping cart functionality, and a responsive user interface.",
     "tags": ["React", "JavaScript", "CSS", "Node.js", "MongoDB"],
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "image": "https://images.unsplash.com/photo-1611605698335-8b1569810432?auto=format&fit=crop&q=80&w=1000",
+    "image": "https://i.pinimg.com/736x/bc/63/15/bc63153a9979da6c71d4fd8faddb8109.jpg",
     "title": "Social Media App",
     "description": "A social media application where users can create posts, interact with content, and manage their profiles.",
     "tags": ["React", "Node.js", "Express", "MongoDB", "JWT"],
@@ -37,7 +37,7 @@
   },
   {
     "id": 5,
-    "image": "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=1000",
+    "image": "https://i.pinimg.com/1200x/e0/9c/4a/e09c4a7097110c36a647e3cf31f31cca.jpg",
     "title": "Developer Portfolio",
     "description": "A responsive personal portfolio website showcasing projects, technical skills, experience, and contact information.",
     "tags": ["HTML", "CSS", "JavaScript", "React", "GSAP"],
@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&q=80&w=1000",
+    "image": "https://i.pinimg.com/736x/66/f9/29/66f929125acd698c229c5938c0b9724e.jpg",
     "title": "Banking Management System",
     "description": "A banking management system for handling customer accounts, transactions, deposits, withdrawals, and account information.",
     "tags": ["Java", "Spring Boot", "MySQL", "REST API", "JDBC"],
@@ -55,7 +55,7 @@
   },
   {
     "id": 7,
-    "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&q=80&w=1000",
+    "image": "https://i.pinimg.com/736x/8a/5b/85/8a5b85bbf339fc94bb391d2adffffdf2.jpg",
     "title": "Task Management App",
     "description": "A productivity application that allows users to create, organize, track, and manage daily tasks efficiently.",
     "tags": ["React", "Redux Toolkit", "JavaScript", "Tailwind CSS", "LocalStorage"],
@@ -64,7 +64,7 @@
   },
   {
     "id": 8,
-    "image": "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&q=80&w=1000",
+    "image": "https://i.pinimg.com/736x/41/9c/9f/419c9f27bf94c7209fb6705fbc2fd3ce.jpg",
     "title": "Weather Forecast App",
     "description": "A weather application that displays current weather conditions, temperature, and forecasts using a weather API.",
     "tags": ["React", "JavaScript", "REST API", "CSS", "Axios"],
