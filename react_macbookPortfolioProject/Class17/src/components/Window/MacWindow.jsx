@@ -2,9 +2,14 @@ import React from 'react'
 import { Rnd } from 'react-rnd'
 import './window.scss'
 
-const MacWindow = () => {
+const MacWindow = ({children}) => {
   return (
-   <Rnd>
+   <Rnd default={{
+    width:'50vw',
+    height:'55vh',
+    x:300,
+    y:200
+   }}>
     <div className='window'>
         <div className="upper-content">
             <div className="btn">
@@ -18,7 +23,7 @@ const MacWindow = () => {
             </div>
         </div>
         <div className="lower-content">
-            Hello
+           {children}
         </div>
     </div>
    </Rnd>
