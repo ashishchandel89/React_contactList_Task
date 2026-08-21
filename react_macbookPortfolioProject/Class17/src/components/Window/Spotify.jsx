@@ -3,7 +3,7 @@ import MacWindow from './MacWindow'
 import './spotify.scss'
 const Spotify = () => {
   return (
-    <MacWindow width='20vw'>
+    <MacWindow width='30vw'>
         <div className='spotify-window'>
           <iframe data-testid="embed-iframe" style={{borderRadius:'12px'}}
           src="https://open.spotify.com/embed/playlist/4UbEObOXYmQYjDRNJX10Hf?utm_source=generator&theme=0&si=961be269ff22435e" 
