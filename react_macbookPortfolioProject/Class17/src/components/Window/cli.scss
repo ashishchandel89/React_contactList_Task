@@ -1,9 +1,45 @@
-.cli-window{
+.cli-window {
     width: 100%;
     height: 100%;
+
     margin-bottom: 1rem;
-    background-color: transparent;
-    * {
+
+    background-color: #1c1b1bd1;
+
+    overflow: hidden;
+
+    div[name="react-console-emulator"] {
+        width: 100%;
+        height: 100%;
+
         background-color: transparent !important;
+
+        overflow: auto;
+    }
+
+
+    // Tablet
+    @media (max-width: 768px) {
+        margin-bottom: 0.75rem;
+
+        div[name="react-console-emulator"] {
+            font-size: 0.8rem;
+        }
+    }
+
+
+    // Mobile
+    @media (max-width: 480px) {
+        margin-bottom: 0.5rem;
+
+        div[name="react-console-emulator"] {
+            width: 100%;
+            height: 100%;
+
+            font-size: 0.7rem;
+
+            overflow-x: auto;
+            overflow-y: auto;
+        }
     }
 }

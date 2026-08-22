@@ -5,7 +5,7 @@ import "./cli.scss"
 
 const Terminal = TerminalPackage.default.default;
 
-const Cli = () => {
+const Cli = ({windowName,setWindowState}) => {
    const commands = {
     about: {
         description: 'About me',
@@ -151,34 +151,47 @@ Feel free to reach out! 🚀`
     }
 }
     const welcomeMessage = `
-    ╔════════════════════════════════════════╗
-    ║------- Welcome to Ashish's CLI! -------║
-    ╚════════════════════════════════════════╝
-    Hello! I'm Ashish Chandel, a Computer Science
-    Engineering student and aspiring Full Stack Developer.
-    Welcome to my interactive portfolio terminal.
-    Explore my skills, projects, experience, and more
-    using simple terminal commands.
+    ╔══════════════════════════════════════╗
+    ║------ Welcome to Ashish's CLI! ------║
+    ╚══════════════════════════════════════╝
+   Hey! I'm Ashish Chandel — a Computer Science Engineering student
+and an aspiring Full Stack Developer.
 
-    Type 'help' to see all available commands, or try:
+Welcome to my little corner of the web! 
 
-    • about       - Learn more about me
-    • skills      - Explore my technical skills
-    • projects    - View my projects
-    • experience  - Check my experience
-    • contact     - Get in touch with me
+This is an interactive portfolio terminal where you can
+explore my skills, projects, experience, and more
+using simple CLI commands.
+
+Try these commands to get started:
+
+  about       → A little about me
+  skills      → My technical skills
+  projects    → Things I've built
+  experience  → My education & experience
+  contact     → Get in touch
+  github      → Visit my GitHub
+  linkedin    → Connect with me
+  resume      → View my resume
+
+Not sure where to start? Just type 'help'.
+
+Have fun exploring! 
 
     Happy exploring! 
 `;
     return (
-        <MacWindow>
+        <MacWindow windowName={windowName}
+        setWindowState={setWindowState}>
             <div className="cli-window">
                 <Terminal
                     commands={commands}
                     welcomeMessage={welcomeMessage}
-                    promptLabel="ashishChandel:~$"
+                    
+                    promptLabel="ashishChandel:~$-  "
                     promptLabelStyle ={{ color: '#00ff00' }}
                     autoFocus='true'
+                    
                    
                 />
             </div>

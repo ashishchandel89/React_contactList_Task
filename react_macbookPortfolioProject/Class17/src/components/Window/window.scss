@@ -1,23 +1,31 @@
 .window {
-    min-width: 25rem;
-    min-height: 15rem;
     width: 100%;
     height: 100%;
+
+    min-width: 0;
+    min-height: 0;
+
     background-color: rgb(16, 16, 16);
     border-radius: 8px;
+
     color: white;
     overflow: hidden;
 
     .upper-content {
         width: 100%;
         height: 25px;
+
         display: flex;
         flex-direction: row;
         align-items: center;
+
         gap: 2rem;
+
         padding-inline: 0.45rem;
         padding-block: 0.35rem;
+
         background-color: rgba(128, 128, 128, 0.221);
+
         border-bottom: 1px solid rgba(128, 128, 128, 0.493);
 
         .btn {
@@ -25,14 +33,18 @@
             flex-direction: row;
             gap: 0.15rem;
 
+            flex-shrink: 0;
+
             .icon {
                 width: 12px;
                 height: 12px;
+
                 border-radius: 50%;
             }
 
             .red {
                 background-color: rgb(239, 52, 42);
+                cursor: pointer;
             }
 
             .yellow {
@@ -48,27 +60,114 @@
             display: flex;
             flex-direction: row;
             align-items: center;
+
             gap: 0.15rem;
+
             font-size: 0.7rem;
             color: white;
+
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
 
             i {
                 font-size: 0.9rem;
                 color: rgb(88, 88, 236);
+                flex-shrink: 0;
+            }
+
+            p {
+                overflow: hidden;
+                text-overflow: ellipsis;
             }
         }
     }
 
     .lower-content {
+        width: 100%;
         height: calc(100% - 25px);
+
         overflow: hidden;
+
         padding: 0.2rem 0.3rem;
     }
-    *::-webkit-scrollbar{
+
+    *::-webkit-scrollbar {
         width: 8px;
+        height: 8px;
     }
-    *::-webkit-scrollbar-thumb{
+
+    *::-webkit-scrollbar-thumb {
         border-radius: 4px;
         background-color: rgba(88, 87, 87, 0.575);
+    }
+
+
+    // Tablet
+    @media (max-width: 768px) {
+
+        border-radius: 7px;
+
+        .upper-content {
+            gap: 1rem;
+
+            .terminalName {
+                font-size: 0.65rem;
+
+                i {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+
+        .lower-content {
+            padding: 0.15rem 0.25rem;
+        }
+    }
+
+
+    // Mobile
+    @media (max-width: 480px) {
+
+        border-radius: 6px;
+
+        .upper-content {
+            height: 28px;
+
+            gap: 0.7rem;
+
+            padding-inline: 0.5rem;
+
+            .btn {
+                gap: 0.18rem;
+
+                .icon {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+
+            .terminalName {
+                min-width: 0;
+                flex: 1;
+
+                font-size: 0.6rem;
+
+                i {
+                    font-size: 0.75rem;
+                }
+            }
+        }
+
+        .lower-content {
+            height: calc(100% - 28px);
+
+            padding: 0.15rem;
+        }
+
+        *::-webkit-scrollbar {
+            width: 5px;
+            height: 5px;
+        }
     }
 }

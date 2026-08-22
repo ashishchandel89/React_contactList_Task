@@ -1,14 +1,38 @@
-.spotify-window{
+.spotify-window {
     width: 100%;
     height: 100%;
-    overflow: auto;
-    padding-inline: 0.35rem;
-    padding-block: 0.35rem;
 
-    iframe{
+    overflow: hidden;
+
+    padding: 0.35rem;
+
+    iframe {
         width: 100%;
         height: 100%;
-       border: none;
-        
+
+        display: block;
+
+        border: none;
+        border-radius: 6px;
+    }
+
+    // Tablet
+    @media (max-width: 768px) {
+        padding: 0.25rem;
+
+        iframe {
+            border-radius: 5px;
+        }
+    }
+
+    // Mobile
+    @media (max-width: 480px) {
+        padding: 0.15rem;
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+        }
     }
 }

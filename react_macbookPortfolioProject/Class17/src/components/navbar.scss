@@ -1,27 +1,61 @@
-
-nav{
+nav {
     width: 100%;
     background-color: rgba(87, 86, 86, 0.156);
     padding-inline: 1rem;
     padding-block: 0.5rem;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+
     backdrop-filter: blur(5px);
     color: white;
 
-    .leftBar{
+    .leftBar {
         display: flex;
+        align-items: center;
         gap: 2rem;
         font-size: 0.8rem;
         pointer-events: none;
     }
-    .rightBar{
+
+    .rightBar {
         display: flex;
+        align-items: center;
         gap: 0.6rem;
         font-size: 0.8rem;
-       
         pointer-events: none;
     }
 
+    // Tablet
+    @media (max-width: 768px) {
+        padding-inline: 0.8rem;
+
+        .leftBar {
+            gap: 1rem;
+            font-size: 0.7rem;
+        }
+
+        .rightBar {
+            gap: 0.4rem;
+            font-size: 0.7rem;
+        }
+    }
+
+    // Mobile
+    @media (max-width: 480px) {
+        padding-inline: 0.6rem;
+        padding-block: 0.4rem;
+
+        .leftBar {
+            gap: 0.6rem;
+            font-size: 0.6rem;
+        }
+
+        .rightBar {
+            gap: 0.3rem;
+            font-size: 0.6rem;
+        }
+    }
 }
